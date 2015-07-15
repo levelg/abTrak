@@ -1,7 +1,8 @@
 /* 
-@Name: Utilities.js
+@Name: adTrak.js
 @Author: Giancarlo Morillo
 @Email: gmorillo@levelg.com
+@git: levelg
 */
 
 var abTrak = {
