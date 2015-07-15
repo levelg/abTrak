@@ -1,7 +1,7 @@
 # abTrak
 
 ###Methods
-- Attempts to ad script with ad in name and associated boolean
+- Attempts to add script with ad in name and associated boolean
 - attempts to establish gpt call back and checks ad for height, visibility and display properties
 
 ###Usage
