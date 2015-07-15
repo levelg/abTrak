@@ -1,0 +1,1 @@
+window.isAdsDisplayed = true;

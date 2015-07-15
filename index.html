@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Infinite Scroll Example</title>
+    <script src="js/adTrak.js"></script>
+    <script>
+     // Load GPT
+     var googletag = googletag || {};
+     googletag.cmd = googletag.cmd || [];
+     (function(){
+       var gads = document.createElement('script');
+       gads.async = true;
+       var useSSL = 'https:' == document.location.protocol;
+       gads.src = (useSSL ? 'https:' : 'http:') +
+           '//www.googletagservices.com/tag/js/gpt.js';
+       var node = document.getElementsByTagName('script')[0];
+       node.parentNode.insertBefore(gads, node);
+       })();
+
+    googletag.cmd.push(function() {
+       googletag.defineSlot('/6355419/Travel/Europe/France/Paris', [300, 250], 'leaderboard').
+        setTargeting("test","infinitescroll").
+        addService(googletag.pubads());
+      googletag.enableServices();
+    });
+    </script>
+  </head>
+  <body>
+     <div id="leaderboard"> 
+         <script> googletag.cmd.push(function() { googletag.display('leaderboard'); }); </script> 
+     </div>
+  </body>
+</html>
