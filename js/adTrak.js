@@ -60,7 +60,7 @@ var abTrak = {
 	test : {
 		adScript : function() {
 			abTrak.util.loadScript(abTrak.scriptURL,function(){
-			    if(typeof(window.isAdsDisplayed)==='undefined' ) abTrak.blocked = false;
+			    if(typeof(window.isAdsDisplayed)!=='undefined' ) abTrak.blocked = false;
 			    abTrak.test1complete = true;
 			    // TODO: clear interval if still running...
 			});
